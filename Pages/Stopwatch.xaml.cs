@@ -13,26 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TimeLord_Konevskii
+namespace TimeLord_Konevskii.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Stopwatch.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Stopwatch : Page
     {
-        public MainWindow()
+        public Stopwatch()
         {
             InitializeComponent();
-            OpenPages(pages.Stopwatch);
-        }
-        public enum pages
-        {
-            Stopwatch
-        }
-        public void OpenPages(pages _page)
-        {
-            if (_page == pages.Stopwatch)
-                frame.Navigate(new Pages.Stopwatch());
         }
     }
 }
